@@ -5,18 +5,40 @@ receivers:
   otlp:
     protocols:
       grpc:
+      http:
+  jaeger:
+    protocols:
+      grpc:
+      thrift_binary:
+      thrift_compact:
+      thrift_http:
+  prometheus:
+    config:
+      scrape_configs:
+        - job_name: "otel-collector"
+          scrape_interval: 5s
+          static_configs:
+            - targets: ["localhost:8888"]
 
 processors:
 
 exporters:
   logging:
+    loglevel: debug
 
 service:
   extensions: [zpages]
   pipelines:
+    metrics:
+      receivers:
+        - prometheus
+       processors: []
+       exporters:
+        - logging
     traces:
       receivers:
         - otlp
+        - jaeger
       processors: []
       exporters:
         - logging
