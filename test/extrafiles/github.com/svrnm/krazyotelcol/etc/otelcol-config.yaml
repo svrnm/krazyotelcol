@@ -32,8 +32,8 @@ service:
     metrics:
       receivers:
         - prometheus
-       processors: []
-       exporters:
+      processors: []
+      exporters:
         - logging
     traces:
       receivers:
