@@ -24,7 +24,6 @@ processors:
 
 exporters:
   logging:
-    loglevel: debug
 
 service:
   extensions: [zpages]
