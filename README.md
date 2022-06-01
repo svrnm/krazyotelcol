@@ -4,6 +4,11 @@ Run the [OpenTelemetry collector](https://github.com/open-telemetry/opentelemetr
 
 ![A screenshot of the gokrazy webinterface showing that an instance of krazyotelcol is running.](./webinterface-home.png)
 
+## Motivation
+
+The motivation behind [gokrazy](https://gokrazy.org/) is to get "_... rid of memory-unsafe languages and all software we don’t strictly need_" and with that you don't have to "_... care about security issues and Linux distribution maintenance on our various Raspberry Pis_". Having these features for the OpenTelemetry collector is the motiviation behind this project. 
+
+
 ## Quick Start
 
 Install the latest version of [Go](https://go.dev/).
