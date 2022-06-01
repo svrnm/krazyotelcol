@@ -2,12 +2,13 @@
 
 Run the [OpenTelemetry collector](https://github.com/open-telemetry/opentelemetry-collector) as an appliance on a Raspberry Pi (powered by [gokrazy](https://gokrazy.org/)).
 
-![A screenshot of the gokrazy webinterface showing that an instance of krazyotelcol is running.](./webinterface-home.png)
-
 ## Motivation
 
 The motivation behind [gokrazy](https://gokrazy.org/) is to get "_... rid of memory-unsafe languages and all software we don’t strictly need_" and with that you don't have to "_... care about security issues and Linux distribution maintenance on our various Raspberry Pis_". Having these features for the OpenTelemetry collector is the motiviation behind this project. 
 
+## Preview
+
+![A screenshot of the gokrazy webinterface showing that an instance of krazyotelcol is running.](./webinterface-home.png)
 
 ## Quick Start
 
